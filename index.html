@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,49 +8,114 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, Vue, React, Angular, Node.js">
     <meta name="author" content="Morozov Egor">
     <title>EgorJS CV</title>
-  </head>
-  <body>
-    <section id="app" class="portfolio">
-      <div class="content-container">
+</head>
+<body>
+<section id="app" class="portfolio">
+    <div class="content-container">
 
         <header class="portfolio__header header">
-          <a href="#" class="portfolio__logo">Egor Morozov</a>
-          <ul class="portfolio__navigation navigation">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link navigation__link--active">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Journey</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Skills</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Contact Me</a>
-            </li>
-          </ul>
+            <a href="#" class="portfolio__logo">Egor Morozov</a>
+            <ul class="portfolio__navigation navigation">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link--active">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Journey</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Skills</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Contact Me</a>
+                </li>
+            </ul>
         </header>
 
         <main class="portfolio__main main">
-          <section class="main__container">
-            <div class="main__info">
-              <h1 class="main__title">Hi, I'm Egor</h1>
-              <h3 class="main__pre-title">Frontend Developer</h3>
-              <p class="main__about">
-                Web developer with almost <mark class="main__mark">4 years</mark> of front end experience and passion for clean code/architecture responsive website design and a firm believer in responsible approach to develop and architecture
-              </p>
-              <button class="main__contact-me btn">
-                Contact me
-              </button>
-            </div>
-            <div class="main__picture-container">
-              <img class="main__picture" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Morozov Egor Avatar">
-            </div>
-          </section>
+            <!--          About section-->
+            <section class="main__container">
+                <div class="main__info">
+                    <h1 class="main__title">Hi, I'm Egor</h1>
+                    <h3 class="main__pre-title">Frontend Developer</h3>
+                    <p class="main__about">
+                        Web developer with almost <mark class="main__mark">4 years</mark> of front end experience and passion for clean code/architecture, responsive website design and a firm believer in responsible approach to develop
+                    </p>
+                    <button class="main__contact-me btn">
+                        Contact me
+                    </button>
+                </div>
+                <div class="main__picture-container">
+                    <img class="main__picture" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Morozov Egor Avatar">
+                </div>
+            </section>
+            <!--          Journey section-->
+            <section class="main__journey journey">
+                <h1 class="main__title journey__title">Qualification</h1>
+                <h3 class="journey__sub-title">My personal journey</h3>
+                <h3 class="main__pre-title journey__pre-title">Work experience</h3>
+                <div class="journey__timeline timeline">
+                    <div class="timeline__component">
+                        <div class="timeline__date timeline__date--right">August 30, 2017</div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component--bg">
+                        <h2 class="timeline__title">Published First Video</h2>
+                        <p class="timeline__paragraph">
+                            My first YouTube video was a tutorial on how to build a client-server sockets app in Java.
+                        </p>
+                    </div>
+                    <div class="timeline__component timeline__component--bg">
+                        <h2 class="timeline__title">5,000 Subscribers Q&A</h2>
+                        <p class="timeline__paragraph">
+                            To celebrate 5,000 subscribers, I published a video answering some of the most popular questions which
+                            my viewers had asked me since starting my YouTube channel.
+                        </p>
+                        <p class="timeline__paragraph">
+                            I didn't even remove the jumper in the background before recording that video 🤣
+                        </p>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component">
+                        <div class="timeline__date">February 25, 2019</div>
+                    </div>
+                    <div class="timeline__component">
+                        <div class="timeline__date timeline__date--right">June 3, 2020</div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component--bg">
+                        <h2 class="timeline__title">First Live Stream</h2>
+                        <p class="timeline__paragraph">
+                            In my first ever live stream, I couldn't put my cup of coffee down.
+                        </p>
+                    </div>
+                    <div class="timeline__component timeline__component--bottom timeline__component--bg">
+                        <h2 class="timeline__title">Vertical Timeline</h2>
+                        <p class="timeline__paragraph">
+                            Published this video.
+                        </p>
+                        <p class="timeline__paragraph">
+                            Link to code in description 🔽
+                        </p>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                        <div class="timeline__point timeline__point--bottom"></div>
+                    </div>
+                    <div class="timeline__component timeline__component--bottom">
+                        <div class="timeline__date">June 28, 2021</div>
+                    </div>
+                </div>
+            </section>
         </main>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <script defer type="module" src="/src/ts/main.ts"></script>
-  </body>
+<script defer type="module" src="/src/ts/main.ts"></script>
+</body>
 </html>

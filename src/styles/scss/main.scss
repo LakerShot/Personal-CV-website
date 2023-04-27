@@ -6,6 +6,7 @@
 @import '../scss/common.scss';
 
 body {
+    position: relative;
     background-color: var(--primary-color);
     font-family: $fnManrope;
     font-weight: $fMedium;
@@ -16,8 +17,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
-    overflow: hidden;
+    overflow-x: hidden;
     cursor: default;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        background-size: cover;
+        right: 0;
+        bottom: 0;
+        background-image: url("./../../assets/images/javascript.png");
+    }
 }
 
 .portfolio {
@@ -132,3 +145,109 @@ body {
 
     }
 }
+
+.journey {
+    &__title {
+        position: relative;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            height: calc-rem(4px);
+            width: calc-rem(150px);
+            background-color: var(--accent-color);
+            position: absolute;
+            bottom: 50%;
+            border-radius: $baseBorderRadius;
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+    }
+
+    &__title,
+    &__pre-title {
+        text-align: center;
+    }
+
+    &__pre-title {
+        margin: 0 0 calc-rem(40px);
+    }
+
+    &__sub-title {
+        position: relative;
+        text-align: center;
+        margin-bottom: calc-rem(40px);
+        color: var(--text-secondary-color);
+    }
+}
+
+.timeline {
+    margin: 0 auto;
+    max-width: calc-rem(750px);
+    padding: calc-rem(25px);
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    color: #ffffff;
+
+    &__component {
+        margin: 0 calc-rem(20px) calc-rem(20px) calc-rem(20px);
+
+        &--bg {
+            padding: calc-rem(24px);
+            background: var(--secondary-color);
+            box-shadow: 0 0 calc-rem(5px) rgba(0, 0, 0, 0.2);
+            border-radius: calc-rem(10px);
+        }
+
+        &--bottom {
+            margin-bottom: 0;
+        }
+    }
+
+    &__middle {
+        position: relative;
+        background: var(--accent-color);
+    }
+
+    &__point {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc-rem(15px);
+        height: calc-rem(15px);
+        background: var(--text-primary-color);
+        border-radius: 50%;
+
+        &--bottom {
+            top: initial;
+            bottom: 0;
+        }
+    }
+
+    &__date {
+        &--right {
+            text-align: right;
+        }
+    }
+
+    &__title {
+        font-size: calc-rem(18px);
+        margin: 0 0 calc-rem(5px);
+        font-weight: bold;
+        color: var(--accent-light-color);
+    }
+
+    &__paragraph {
+        line-height: 1.5;
+        color: var(--third-party-color);
+    }
+}
+
