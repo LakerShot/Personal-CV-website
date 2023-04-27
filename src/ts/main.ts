@@ -1,10 +1,11 @@
 import 'normalize.css';
 import '../styles/scss/main.scss'
-// import viteLogo from '/public/vite.svg'
+import { initEducationCarousel } from "./education-carousel";
 
 // document.querySelector<HTMLDivElement>('#app')
 
 const initProject = () => {
+    initEducationCarousel()
     console.log('app is running...')
 }
 

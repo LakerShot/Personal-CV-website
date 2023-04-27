@@ -1,0 +1,12 @@
+.swiper {
+    max-height: 250px;
+    max-width: 950px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #a4a1a1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffc836;
+}

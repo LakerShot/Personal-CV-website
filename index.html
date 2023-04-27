@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/home.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Personal website. Created for resume">
     <meta name="keywords" content="HTML, CSS, JavaScript, Vue, React, Angular, Node.js">
     <meta name="author" content="Morozov Egor">
-    <title>EgorJS CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>Egor Morozov</title>
 </head>
 <body>
 <section id="app" class="portfolio">
@@ -40,7 +41,7 @@
                     <p class="main__about">
                         Web developer with almost <mark class="main__mark">4 years</mark> of front end experience and passion for clean code/architecture, responsive website design and a firm believer in responsible approach to develop
                     </p>
-                    <button class="main__contact-me btn">
+                    <button class="main__contact-me btn" type="button" aria-label="Contact me">
                         Contact me
                     </button>
                 </div>
@@ -55,67 +56,110 @@
                 <h3 class="main__pre-title journey__pre-title">Work experience</h3>
                 <div class="journey__timeline timeline">
                     <div class="timeline__component">
-                        <div class="timeline__date timeline__date--right">August 30, 2017</div>
+                        <div class="timeline__date timeline__date--right">June 2022 - Present</div>
                     </div>
                     <div class="timeline__middle">
                         <div class="timeline__point"></div>
                     </div>
-                    <div class="timeline__component timeline__component--bg">
-                        <h2 class="timeline__title">Published First Video</h2>
+                    <div class="timeline__component timeline__component--bg timeline__component--vue">
+                        <h2 class="timeline__title">Reelmotion Games</h2>
+                        <h5 class="timeline__pre-title">Hua Hin, Thailand, Hybrid, Full-time, (11 months)</h5>
                         <p class="timeline__paragraph">
-                            My first YouTube video was a tutorial on how to build a client-server sockets app in Java.
+                            Gained experience in team management and team leading.
+                        </p>
+                        <p class="timeline__paragraph">
+                            Developed and implemented a light mode theme, сovered the functionality of payment systems with unit and e2e tests.
+                        </p>
+                        <p class="timeline__paragraph">
+                            Created a couple of tables with infinite pagination and also developed several independent widgets such as: sidebar, ticker panel, etc.
                         </p>
                     </div>
-                    <div class="timeline__component timeline__component--bg">
-                        <h2 class="timeline__title">5,000 Subscribers Q&A</h2>
+                    <div class="timeline__component timeline__component--bg timeline__component--angular">
+                        <h2 class="timeline__title">Crimtan</h2>
+                        <h5 class="timeline__pre-title">London, United Kingdom, Remote, Full-time, (9 months)</h5>
                         <p class="timeline__paragraph">
-                            To celebrate 5,000 subscribers, I published a video answering some of the most popular questions which
-                            my viewers had asked me since starting my YouTube channel.
+                            Transferred the core features from AngularJs to a new one Angular app.
                         </p>
                         <p class="timeline__paragraph">
-                            I didn't even remove the jumper in the background before recording that video 🤣
+                            Delivered features and participated in sprint planning. Slightly rewrote engine form. Improved table navigation and a11y support.
                         </p>
                     </div>
                     <div class="timeline__middle">
                         <div class="timeline__point"></div>
                     </div>
                     <div class="timeline__component">
-                        <div class="timeline__date">February 25, 2019</div>
+                        <div class="timeline__date">September 2021 - May 2022</div>
                     </div>
                     <div class="timeline__component">
-                        <div class="timeline__date timeline__date--right">June 3, 2020</div>
+                        <div class="timeline__date timeline__date--right">November 2019 - November 2021</div>
                     </div>
                     <div class="timeline__middle">
                         <div class="timeline__point"></div>
                     </div>
-                    <div class="timeline__component timeline__component--bg">
-                        <h2 class="timeline__title">First Live Stream</h2>
+                    <div class="timeline__component timeline__component--bg timeline__component--react">
+                        <h2 class="timeline__title">Java Mentor</h2>
+                        <h5 class="timeline__pre-title">St Petersburg City, Russia, Full-time, Remote, (2 years)</h5>
                         <p class="timeline__paragraph">
-                            In my first ever live stream, I couldn't put my cup of coffee down.
-                        </p>
-                    </div>
-                    <div class="timeline__component timeline__component--bottom timeline__component--bg">
-                        <h2 class="timeline__title">Vertical Timeline</h2>
-                        <p class="timeline__paragraph">
-                            Published this video.
+                            Designed and developed user-friendly web application for educating people in the field of IT.
                         </p>
                         <p class="timeline__paragraph">
-                            Link to code in description 🔽
+                            Reduced bundle size and TTI metric.Created modal factory system based on React Portal and several independent widgets.
+                        </p>
+                        <p class="timeline__paragraph">
+                            Was engaged in platform support for different roles, rewrote the legacy code to TypeScript.
                         </p>
                     </div>
-                    <div class="timeline__middle">
-                        <div class="timeline__point"></div>
-                        <div class="timeline__point timeline__point--bottom"></div>
+                </div>
+            </section>
+<!--            Mentoring section-->
+            <section class="main__mentoring mentoring">
+                <h3 class="mentoring__heading">Mentoring / Consulting <br> experience</h3>
+                <div class="mentoring__date">April 2021 - May 2023</div>
+                <div class="mentoring__info timeline__component timeline__component--bg timeline__component--react">
+                    <h2 class="timeline__title mentoring__title">Kata Academy</h2>
+                    <h5 class="mentoring__pre-title">St Petersburg City, Russia, Part-time, Remote, (2 years)</h5>
+                    <p class="timeline__paragraph">
+                        Helped hundreds of people in learning and understanding technologies such as js, html, css, react and so on by code reviews and personal meetings. Implemented 1-on-1 meeting.
+                    </p>
+                    <p class="timeline__paragraph mentoring__paragraph">
+                        Support students throughout their entire educational journey, giving them best tec advice about development. Assisted students with creating their schedules.
+                    </p>
+                </div>
+            </section>
+<!--            Education section-->
+            <section class="main__education education">
+                <h3 class="main__pre-title journey__pre-title">Education experience</h3>
+                <div class="swiper education__carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mentoring__info timeline__component timeline__component--bg">
+                            <div class="education__image-container">
+                                <img class="education__image" src="./src/assets/images/ftu.jpeg" alt="Forest Technical University">
+                            </div>
+                            <h2 class="timeline__title mentoring__title">Forest Technical University</h2>
+                            <h5 class="mentoring__pre-title">Oct 2021 - Aug 2026 (Absentia)</h5>
+                            <p class="timeline__paragraph">
+                                St Petersburg City, Russia, Bachelor's degree, Higher education, information systems and technology
+                            </p>
+                        </div>
+                        <div class="swiper-slide mentoring__info timeline__component timeline__component--bg">
+                            <div class="education__image-container">
+                                <img class="education__image" src="./src/assets/images/amk.png" alt="Forest Technical University">
+                            </div>
+                            <h2 class="timeline__title mentoring__title">Academy of Engineering</h2>
+                            <h5 class="mentoring__pre-title">September 2016 - July 2020</h5>
+                            <p class="timeline__paragraph">
+                                St Petersburg City, Russia, Secondary education, Engineering technology / Mechanical engineering
+                            </p>
+                        </div>
                     </div>
-                    <div class="timeline__component timeline__component--bottom">
-                        <div class="timeline__date">June 28, 2021</div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
         </main>
     </div>
 </section>
 
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script defer type="module" src="/src/ts/main.ts"></script>
 </body>
 </html>
