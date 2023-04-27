@@ -1,0 +1,16 @@
+@mixin font-face($fontFamily, $fileName, $fontWeight, $fontStyle: normal, $fontDisplay: swap) {
+    @font-face {
+        font-family: $fontFamily;
+        src: url('/public/fonts/#{$fileName}.woff2') format('woff2'),
+        url('/public/fonts/#{$fileName}.woff') format('woff');
+        font-weight: $fontWeight;
+        font-style: $fontStyle;
+        font-display: $fontDisplay;
+    }
+}
+
+@include font-face($fnManrope, 'Manrope-Light', $fLight);
+@include font-face($fnManrope, 'Manrope-Regular', $fRegular);
+@include font-face($fnManrope, 'Manrope-Medium', $fMedium);
+@include font-face($fnManrope, 'Manrope-Bold', $fBold);
+

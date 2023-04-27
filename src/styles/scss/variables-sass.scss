@@ -1,0 +1,66 @@
+// Fonts
+$fnManrope: 'Manrope';
+
+$fLight: 300;
+$fRegular: 400;
+$fMedium: 500;
+$fBold: 700;
+
+//Sizes
+$mwContent: 1600px;
+$pContent: 70px;
+$baseRem: 16px;
+
+$sizeScrollbar: 10px;
+
+//Borders
+$baseBorderRadius: 8px;
+
+// Filters
+$fWhite: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7485%) hue-rotate(96deg) brightness(98%) contrast(109%);
+$fPurple: brightness(0) saturate(100%) invert(45%) sepia(44%) saturate(4252%) hue-rotate(229deg) brightness(101%) contrast(100%);
+$fPeriwinkle: brightness(0) saturate(100%) invert(83%) sepia(10%) saturate(790%) hue-rotate(197deg) brightness(93%) contrast(93%);
+$fCloudBurstLight: brightness(0) saturate(100%) invert(19%) sepia(9%) saturate(2478%) hue-rotate(196deg) brightness(94%) contrast(81%);
+$fMediumSpringGreen: brightness(0) saturate(100%) invert(79%) sepia(42%) saturate(826%) hue-rotate(93deg) brightness(99%) contrast(89%);
+$fMidnightExpress: brightness(0) saturate(100%) invert(12%) sepia(15%) saturate(1264%) hue-rotate(195deg) brightness(91%) contrast(95%);
+
+// Breakpoints
+$bXXL: 1600px;
+$bXl: 1400px;
+$bLg: 1200px;
+$bMd: 992px;
+$bSm: 768px;
+$bXs: 576px;
+
+$bMinWidth: 375px;
+
+$bHXl: 1025px;
+$bHLg: 901px;
+$bHMd: 801px;
+$bHSm: 769px;
+$bHXs: 577px;
+
+//Medias
+$mXXl: '(max-width: #{$bXXL - 1})';
+$mXl: '(max-width: #{$bXl - 1})';
+$mLg: '(max-width: #{$bLg - 1})';
+$mMd: '(max-width: #{$bMd - 1})';
+$mSm: '(max-width: #{$bSm - 1})';
+$mXs: '(max-width: #{$bXs - 1})';
+
+$mMoreXl: '(min-width: #{$bXl})';
+$mMoreLg: '(min-width: #{$bLg})';
+$mMoreMd: '(min-width: #{$bMd})';
+$mMoreSm: '(min-width: #{$bSm})';
+$mMoreXs: '(min-width: #{$bXs})';
+
+$mHXl: '(max-height: #{$bHXl - 1})';
+$mHLg: '(max-height: #{$bHLg - 1})';
+$mHMd: '(max-height: #{$bHMd - 1})';
+$mHSm: '(max-height: #{$bHSm - 1})';
+$mHXs: '(max-height: #{$bHXs - 1})';
+
+$mMinWidth: '(max-width: #{$bMinWidth - 1})';
+$mMaxContent: '(max-width: #{$mwContent + 2 * $pContent})';
+$mPhoneHorizontal: '#{$mMd} and #{$mHXs} and (orientation: landscape)';
+$specificXL: '(width: 1440px) and (orientation: landscape)';

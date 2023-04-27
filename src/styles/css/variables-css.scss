@@ -1,0 +1,64 @@
+@import '../scss/functions';
+
+:root {
+    // Common
+    --rem: #{$baseRem};
+    --vh: 1vh;
+
+    --hHeader: #{calc-rem(80px)};
+    --hAccauntNav: #{calc-rem(60px)};
+    --hTicker: #{calc-rem(80px)};
+    --minHInput: #{calc-rem(64px)};
+    --minHInputSm: #{calc-rem(53px)};
+
+    // Gutters
+    --pContent: #{$pContent};
+
+    // Z-index
+    --zToastOnModal: 115;
+    --zModal: 110;
+    --zHeader: 100;
+    --zChatWidgetBtn: 95;
+    --zToasts: 95;
+    --zMultiselectOptions: 50;
+    --zDetailCard: 50;
+    --zTooltip: 40;
+
+    // Animation Delays
+    --dTransit: 0.3s;
+
+    // Breakpoints
+    --bXl: #{$bXl};
+    --bLg: #{$bLg};
+    --bMd: #{$bMd};
+    --bSm: #{$bSm};
+    --bXs: #{$bXs};
+
+    --bHXl: #{$bHXl};
+    --bHLg: #{$bHLg};
+    --bHMd: #{$bHMd};
+    --bHSm: #{$bHSm};
+    --bHXs: #{$bHXs};
+
+    @media #{$mXl} {
+    }
+
+    @media #{$mXl}, #{$mHLg} {
+        --rem: 14px;
+        --pContent: 30px;
+    }
+
+    @media #{$mMd}, #{$mHMd} {
+        --hHeader: #{calc-rem(78px)};
+    }
+
+    @media #{$mSm} {
+        --minHInput: 53px;
+        --pContent: 15px;
+        --hHeader: #{calc-rem(56px)};
+    }
+
+    @media #{$mXs} {
+        --minHInput: 50px;
+    }
+}
