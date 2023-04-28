@@ -8,5 +8,8 @@ export const initEducationCarousel = (): void => {
             clickable: true,
         },
         loop: true,
+        autoplay: {
+            delay: 5000,
+        },
     })
 }
