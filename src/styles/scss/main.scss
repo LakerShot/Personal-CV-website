@@ -4,6 +4,7 @@
 @import '../scss/functions.scss';
 @import '../scss/fonts.scss';
 @import '../scss/common.scss';
+@import '../scss/keyframes.scss';
 @import '../css/swiper.css';
 
 body {
@@ -85,7 +86,7 @@ body {
 
         &:focus {
             outline: none;
-            border-color: var(--accent-color);
+            border-color: var(--accent-light-color);
         }
 
         &--active {
@@ -151,7 +152,7 @@ body {
     }
 
     &__mentoring {
-        margin-bottom: calc-rem(80px);
+        margin-bottom: calc-rem(160px);
     }
 
     &__education {
@@ -372,5 +373,68 @@ body {
         border-radius: 50%;
         border: 2px solid var(--text-secondary-color);
         box-shadow: rgb(31, 31, 31) 0px 2px 8px 0px;
+    }
+}
+
+.skills {
+    &__actions {
+        position: relative;
+        margin: 0 auto;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: calc-rem(50px);
+    }
+
+    &__decor {
+        position: absolute;
+        right: 44.8%;
+        bottom: 25%;
+        width: calc-rem(40px);
+        height: calc-rem(3px);
+        background-color: var(--accent-color);
+        transform: rotate(125deg);
+        border-radius: $baseBorderRadius;
+
+        &--rotate {
+            animation: .3s rotateClockwise ease-in-out forwards;
+        }
+
+        &--initial {
+            animation: .3s counterClockWise ease-in-out forwards;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--text-primary-color);
+        font-size: calc-rem(20px);
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 110%;
+            height: calc-rem(3px);
+            background-color: transparent;
+            border-radius: $baseBorderRadius;
+            position: absolute;
+            bottom: -50%;
+            left: -5%;
+        }
+
+        &:hover {
+            color: var(--accent-light-color);
+        }
+
+        &--active {
+            color: var(--accent-color);
+            &:before {
+                background-color: var(--accent-color);
+            }
+        }
     }
 }

@@ -1,0 +1,27 @@
+@keyframes rotateClockwise {
+    from {
+        transform: rotate(125deg);
+    }
+
+    50% {
+        transform: rotate(250deg);
+    }
+
+    to {
+        transform: rotate(410deg);
+    }
+}
+
+@keyframes counterClockWise {
+    from {
+        transform: rotate(410deg);
+    }
+
+    50% {
+        transform: rotate(250deg);
+    }
+
+    to {
+        transform: rotate(125deg);
+    }
+}
