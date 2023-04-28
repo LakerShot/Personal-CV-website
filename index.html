@@ -14,6 +14,8 @@
 <section id="app" class="portfolio">
     <div class="content-container">
 
+<!--        Header section -->
+
         <header class="portfolio__header header">
             <a href="#" class="portfolio__logo">Egor Morozov</a>
             <ul class="portfolio__navigation navigation">
@@ -27,13 +29,18 @@
                     <a href="#" class="navigation__link">Skills</a>
                 </li>
                 <li class="navigation__item">
+                    <a href="#" class="navigation__link">Education</a>
+                </li>
+                <li class="navigation__item">
                     <a href="#" class="navigation__link">Contact Me</a>
                 </li>
             </ul>
         </header>
 
         <main class="portfolio__main main">
+
             <!--          About section-->
+
             <section class="main__container">
                 <div class="main__info">
                     <h1 class="main__title">Hi, I'm Egor</h1>
@@ -49,7 +56,9 @@
                     <img class="main__picture" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Morozov Egor Avatar">
                 </div>
             </section>
+
             <!--          Journey section-->
+
             <section class="main__journey journey">
                 <h1 class="main__title journey__title">Qualification</h1>
                 <h3 class="journey__sub-title">My personal journey</h3>
@@ -111,7 +120,9 @@
                     </div>
                 </div>
             </section>
+
 <!--            Mentoring section-->
+
             <section class="main__mentoring mentoring">
                 <h3 class="mentoring__heading">Mentoring / Consulting <br> experience</h3>
                 <div class="mentoring__date">April 2021 - May 2023</div>
@@ -134,10 +145,102 @@
                     <span class="skills__decor"></span>
                     <button class="skills__btn skills__btn--backend" type="button" aria-label="Backend Skills">Backend Developer</button>
                 </div>
+                <div class="skills__container">
+                    <div class="skills__bars">
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">Javascript</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--javascript">
+                                <span class="skills__item skills__item--javascript"></span>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">React</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--react">
+                                <span class="skills__item skills__item--react"></span>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">Vue</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--vue">
+                                <span class="skills__item skills__item--vue"></span>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">Angular</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--angular">
+                                <span class="skills__item skills__item--angular"></span>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">Git</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--git">
+                                <span class="skills__item skills__item--git"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__bars">
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">HTML</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--javascript">
+                                <span class="skills__item skills__item--html"></span>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">CSS</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--react">
+                                <span class="skills__item skills__item--css"></span>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">Typescript</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--vue">
+                                <span class="skills__item skills__item--typescript"></span>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">Vitest</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--angular">
+                                <span class="skills__item skills__item--vitest"></span>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <div class="skills__info">
+                                <span class="skills__skill">Vite / Webpack</span>
+                            </div>
+                            <div class="skills__progress-line skills__progress-line--git">
+                                <span class="skills__item skills__item--bundler"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__additional additional">
+                    <h3 class="additional__title">Additional Skills</h3>
+                    <p class="additional__description">SOLID, GRASP, KISS, DRY, OOP, Design Patterns, Algorithms, Clean Code/Architecture, Bootstrap, Materialize</p>
+                </div>
             </section>
+
 <!--            Education section-->
+
             <section class="main__education education">
-                <h3 class="main__pre-title journey__pre-title">Education experience</h3>
+                <h1 class="main__title journey__title education__title">Education</h1>
                 <div class="swiper education__carousel">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide mentoring__info timeline__component timeline__component--bg">
@@ -163,6 +266,12 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+            </section>
+
+<!--            Contact Me-->
+
+            <section class="main__contact-me contact-me">
+                <h1 class="main__title journey__title contact-me__title">Contacts</h1>
             </section>
         </main>
     </div>
