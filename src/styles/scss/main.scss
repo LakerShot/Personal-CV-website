@@ -665,12 +665,43 @@ body {
         }
     }
 
+    &__container {
+        width: 100%;
+        position: relative;
+    }
+
+    &__error {
+        position: absolute;
+        right: calc-rem(10px);
+        top: calc-rem(-20px);
+        color: var(--error-color);
+        font-size: calc-rem(12px);
+        text-align: right;
+        display: block;
+        visibility: hidden;
+        pointer-events: none;
+
+        &--visible {
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+
     &__form {
-        max-width: calc-rem(600px);
+        max-width: calc-rem(650px);
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: calc-rem(40px);
+    }
+
+    &__send {
+        width: fit-content;
+        align-self: end;
+
+        &:disabled {
+            background-color: var(--text-secondary-color);
+        }
     }
 }
 

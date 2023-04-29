@@ -275,10 +275,14 @@
                 <h3 class="journey__sub-title">Me</h3>
                 <form action="POST" class="contact-me__form" type="submit">
                     <div class="contact-me__heading">
-                        <input type="text" max="50" class="contact-me__input" placeholder="Name">
-                        <input type="email" max="100" class="contact-me__input" placeholder="Email">
+                        <input type="text" max="50" class="contact-me__input contact-me__name" placeholder="Name">
+                        <div class="contact-me__container">
+                            <span class="contact-me__error">Invalid Email</span>
+                            <input type="text" max="100" class="contact-me__input  contact-me__email" placeholder="Email">
+                        </div>
                     </div>
-                    <textarea class="contact-me__input contact-me__textarea" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea minlength="5" class="contact-me__input contact-me__textarea contact-me__email" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button class="btn contact-me__send" disabled type="submit" aria-label="Send Message">Send Message</button>
                 </form>
             </section>
         </main>
