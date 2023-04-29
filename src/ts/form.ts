@@ -1,4 +1,5 @@
 import { ApiRequest } from "./api-request";
+import { successToast} from "./toast";
 
 const contactMeForm = document.querySelector<HTMLFormElement>('.contact-me__form');
 const nameInput = document.querySelector<HTMLInputElement>('.contact-me__name')
@@ -6,6 +7,7 @@ const emailInput = document.querySelector<HTMLInputElement>('.contact-me__email'
 const messageTextarea = document.querySelector<HTMLTextAreaElement>('.contact-me__textarea')
 const submitButton = document.querySelector<HTMLButtonElement>('.contact-me__send')
 const invalidEmailField = document.querySelector('.contact-me__error');
+
 export const initContactMeForm = (): void => {
     const formDto = {
         name: '',
@@ -19,11 +21,7 @@ export const initContactMeForm = (): void => {
 
     const handleFormFields = (inputType: InputFields, event): void => {
         formDto[inputType] = event.target.value.trim();
-        if (checkIsAllFieldsSettled()) {
-            submitButton.disabled = false;
-        } else {
-            submitButton.disabled = true;
-        }
+        submitButton.disabled = !checkIsAllFieldsSettled();
     }
     const nameInputHandler = event => {
         handleFormFields('name', event)
@@ -62,7 +60,8 @@ export const initContactMeForm = (): void => {
     }
 
     const sendData = async () => {
-        await ApiRequest.sendData(formDto)
+        await ApiRequest.sendData(formDto);
+        await successToast('Data successfully being send!').showToast()
     }
 
     const submitFormHandler = async (event: SubmitEvent) => {

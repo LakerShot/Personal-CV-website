@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, Vue, React, Angular, Node.js">
     <meta name="author" content="Morozov Egor">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Egor Morozov</title>
 </head>
 <body>
@@ -273,7 +274,7 @@
             <section class="main__contact-me contact-me">
                 <h1 class="main__title journey__title contact-me__title">Contact</h1>
                 <h3 class="journey__sub-title">Me</h3>
-                <form action="POST" class="contact-me__form" type="submit">
+                <form method="POST" class="contact-me__form" type="submit">
                     <div class="contact-me__heading">
                         <input type="text" max="50" class="contact-me__input contact-me__name" placeholder="Name">
                         <div class="contact-me__container">
@@ -288,8 +289,6 @@
         </main>
     </div>
 </section>
-
-<script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script defer type="module" src="/src/ts/main.ts"></script>
 </body>
 </html>

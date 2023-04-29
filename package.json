@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/toastify-js": "^1.11.1",
     "sass": "^1.62.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
@@ -16,6 +17,7 @@
   "dependencies": {
     "@types/swiper": "^6.0.0",
     "normalize.css": "^8.0.1",
-    "swiper": "^9.2.4"
+    "swiper": "^9.2.4",
+    "toastify-js": "^1.12.0"
   }
 }

@@ -161,7 +161,7 @@ body {
     }
 
     &__contact-me {
-        margin-bottom: calc-rem(160px);
+        margin-bottom: calc-rem(80px);
     }
 }
 
@@ -381,7 +381,7 @@ body {
         height: 100%;
         border-radius: 50%;
         border: 2px solid var(--text-secondary-color);
-        box-shadow: rgb(31, 31, 31) 0px 2px 8px 0px;
+        box-shadow: rgb(31, 31, 31) 0 2px 8px 0;
     }
 }
 
@@ -642,6 +642,10 @@ body {
         display: flex;
         align-items: center;
         gap: calc-rem(40px);
+    }
+
+    &__textarea {
+        resize: none;
     }
 
     &__input {
