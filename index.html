@@ -9,7 +9,7 @@
     <meta name="author" content="Morozov Egor">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <title>Egor Morozov</title>
+    <title>Personal Site</title>
 </head>
 <body>
 <section id="app" class="portfolio">
@@ -24,16 +24,16 @@
                     <a href="#" class="navigation__link navigation__link--active">About</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">Journey</a>
+                    <a href="#journey" class="navigation__link">Journey</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">Skills</a>
+                    <a href="#skills" class="navigation__link">Skills</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">Education</a>
+                    <a href="#education" class="navigation__link">Education</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">Contact Me</a>
+                    <a href="#contactMe" class="navigation__link">Contact Me</a>
                 </li>
             </ul>
         </header>
@@ -44,14 +44,35 @@
 
             <section class="main__container">
                 <div class="main__info">
-                    <h1 class="main__title">Hi, I'm Egor</h1>
-                    <h3 class="main__pre-title">Frontend Developer</h3>
-                    <p class="main__about">
-                        Web developer with almost <mark class="main__mark">4 years</mark> of front end experience and passion for clean code/architecture, responsive website design and a firm believer in responsible approach to develop
-                    </p>
-                    <button class="main__contact-me btn" type="button" aria-label="Contact me">
-                        Contact me
-                    </button>
+                    <div class="main__links-container">
+                        <ul class="main__links">
+                            <li class="main__element">
+                                <a href="https://github.com/LakerShot" class="main__link" target="_blank" rel="noopener">
+                                    <img class="main__image-link main__image-link--circle" src="./src/assets/svg/github.svg" alt="github">
+                                </a>
+                            </li>
+                            <li class="main__element">
+                                <a href="https://t.me/egorMrJsDev" class="main__link" target="_blank" rel="noopener">
+                                    <img class="main__image-link main__image-link--circle" src="./src/assets/svg/telegram.svg" alt="telegram">
+                                </a>
+                            </li>
+                            <li class="main__element">
+                                <a href="https://www.linkedin.com/in/egor-morozov-a39ab71b5/" class="main__link" target="_blank" rel="noopener">
+                                    <img class="main__image-link" src="./src/assets/svg/linkedin.svg" alt="linkedin">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main__content">
+                        <h1 class="main__title">Hi, I'm Egor</h1>
+                        <h3 class="main__pre-title">Frontend Developer</h3>
+                        <p class="main__about">
+                            Web developer with almost <mark class="main__mark">4 years</mark> of front end experience and passion for clean code/architecture, responsive website design and a firm believer in responsible approach to develop
+                        </p>
+                        <a href="EgorMorozovCv.pdf" class="main__contact-me btn" download type="button" aria-label="Contact me">
+                            Download CV
+                        </a>
+                    </div>
                 </div>
                 <div class="main__picture-container">
                     <img class="main__picture" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Morozov Egor Avatar">
@@ -60,8 +81,10 @@
 
             <!--          Journey section-->
 
-            <section class="main__journey journey">
-                <h1 class="main__title journey__title">Qualification</h1>
+            <section class="main__journey main__negative journey" id="journey">
+                <div class="main__title-wrapper">
+                    <h1 class="main__title journey__title">Qualification</h1>
+                </div>
                 <h3 class="journey__sub-title">My personal journey</h3>
                 <h3 class="main__pre-title journey__pre-title">Work experience</h3>
                 <div class="journey__timeline timeline">
@@ -138,8 +161,13 @@
                     </p>
                 </div>
             </section>
-            <section class="main__journey skills">
-                <h1 class="main__title journey__title">Skills</h1>
+
+<!--            Skills section-->
+
+            <section class="main__journey skills" id="skills">
+                <div class="main__title-wrapper">
+                    <h1 class="main__title journey__title">Skills</h1>
+                </div>
                 <h3 class="journey__sub-title">Technology's that I use</h3>
                 <div class="skills__actions">
                     <button class="skills__btn skills__btn--frontend skills__btn--active" type="button" aria-label="Frontend Skills">Frontend Developer</button>
@@ -166,7 +194,7 @@
                         </div>
                         <div class="skills__bar">
                             <div class="skills__info">
-                                <span class="skills__skill">Vue</span>
+                                <span class="skills__skill">Vue 3</span>
                             </div>
                             <div class="skills__progress-line skills__progress-line--vue">
                                 <span class="skills__item skills__item--vue"></span>
@@ -234,14 +262,16 @@
                 </div>
                 <div class="skills__additional additional">
                     <h3 class="additional__title">Additional Skills</h3>
-                    <p class="additional__description">SOLID, GRASP, KISS, DRY, OOP, Design Patterns, Algorithms, Clean Code/Architecture, Bootstrap, Materialize, Semantic Commit Messages, Git flow</p>
+                    <p class="additional__description">SOLID, GRASP, KISS, DRY, OOP, Design Patterns, FSD, CQRS, Event Sourcing, Algorithms, Clean Code/Architecture, CI/CD, SEO, BEM, Semantic Commit Messages, Git flow, Bootstrap, Materialize, Tailwind, Vuex, Pinia, Redux, Effector, RxJS</p>
                 </div>
             </section>
 
 <!--            Education section-->
 
-            <section class="main__education education">
-                <h1 class="main__title journey__title education__title">Education</h1>
+            <section class="main__education education" id="education">
+                <div class="main__title-wrapper">
+                    <h1 class="main__title journey__title education__title">Education</h1>
+                </div>
                 <div class="swiper education__carousel">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide mentoring__info timeline__component timeline__component--bg">
@@ -271,8 +301,10 @@
 
 <!--            Contact Me-->
 
-            <section class="main__contact-me contact-me">
-                <h1 class="main__title journey__title contact-me__title">Contact</h1>
+            <section class="main__contact contact-me" id="contactMe">
+                <div class="main__title-wrapper">
+                    <h1 class="main__title journey__title contact-me__title">Contact</h1>
+                </div>
                 <h3 class="journey__sub-title">Me</h3>
                 <form method="POST" class="contact-me__form" type="submit">
                     <div class="contact-me__heading">
@@ -286,6 +318,16 @@
                     <button class="btn contact-me__send" disabled type="submit" aria-label="Send Message">Send Message</button>
                 </form>
             </section>
+
+            <footer class="main__footer footer">
+                <p class="footer__copyright">
+                    Copyright
+                    <img class="footer__copyright-icon" src="./src/assets/svg/copyright.svg" alt="copyright">
+                    <time datetime="2023-05-01" class="footer__date">2023</time>
+                    All rights reserved
+                </p>
+                <span class="footer__author">Made by Egor Morozov</span>
+            </footer>
         </main>
     </div>
 </section>

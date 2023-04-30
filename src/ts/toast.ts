@@ -24,6 +24,7 @@ export const errorToast = (message: string) => {
         stopOnFocus: true,
         style: {
             background: "linear-gradient(90deg, rgba(152,134,4,1) 0%, rgba(175,4,4,1) 100%)",
+            borderRadius: '8px'
         },
     })
 }

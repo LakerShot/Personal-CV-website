@@ -25,3 +25,15 @@
         transform: rotate(125deg);
     }
 }
+
+@keyframes scale {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes show {
+    100%{
+        opacity: 1;
+    }
+}
