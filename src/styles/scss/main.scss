@@ -33,9 +33,35 @@ body {
         height: 50px;
         position: fixed;
         background-size: cover;
-        right: 0;
+        left: 0;
         bottom: 0;
         background-image: url("./../../assets/images/javascript.png");
+    }
+}
+
+.portfolio {
+    &__widget {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: calc-rem(40px);
+    }
+
+    &__theme-btn {
+        display: grid;
+        place-items: center;
+        background-color: transparent;
+        border: 2px solid transparent;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: calc-rem(5px);
+        transition: all .2s ease-in;
+
+        &:hover,
+        &:focus {
+            border-color: var(--accent-light-color);
+        }
     }
 }
 
@@ -733,7 +759,7 @@ body {
             right: 0;
             font-weight: normal;
             background: var(--primary-color);
-            color: #fff;
+            color: var(--third-party-color);
             padding: calc-rem(4px) calc-rem(8px);
             font-size: calc-rem(12px);
             border-radius: calc-rem(3px);

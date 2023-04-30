@@ -33,3 +33,21 @@
         border-color: var(--third-party-color);
     }
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: $baseBorderRadius;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-light-color)
+}

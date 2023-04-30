@@ -8,11 +8,13 @@ import { initSkills } from "./skills-tabs";
 import { initContactMeForm } from "./form";
 import { initCurrentTime } from "./current-time";
 import { hideLoader } from "./loader";
+import { initThemeMode } from "./theme";
 
 const initProject = (): void => {
     hideLoader();
     initAnimation();
     initNavigation();
+    initThemeMode();
     initEducationCarousel();
     initSkills();
     initContactMeForm();

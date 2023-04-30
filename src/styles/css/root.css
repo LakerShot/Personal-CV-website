@@ -10,7 +10,14 @@
 }
 
 html[data-theme='light'] {
-
+    --accent-color: #daa30e;
+    --accent-light-color: #b68f29;
+    --primary-color: #fff3f3;
+    --error-color: #ff7a7a;
+    --secondary-color: rgba(155, 154, 154, 0.18);
+    --third-party-color: #2c2c2c;
+    --text-primary-color: #202020;
+    --text-secondary-color: #a4a1a1;
 }
 
 * {
