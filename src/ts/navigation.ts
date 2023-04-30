@@ -5,13 +5,12 @@ export const initNavigation = () => {
     const navigationHandler = event => {
         const selectedLink = event.target as HTMLLinkElement;
 
-        if(selectedLink.classList.contains('.navigation__link--active')) {
+        if(selectedLink.classList.contains('navigation__link--active')) {
             return;
         }
 
-        console.log(navigationLinks)
         navigationLinks.forEach(navigationLink => {
-            navigationLink.classList.remove('.navigation__link--active')
+            navigationLink.classList.remove('navigation__link--active')
         })
 
         selectedLink.classList.add('navigation__link--active')
@@ -19,3 +18,4 @@ export const initNavigation = () => {
 
     navigationContainer.addEventListener('click', navigationHandler)
 }
+

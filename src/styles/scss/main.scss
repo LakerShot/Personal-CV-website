@@ -7,6 +7,10 @@
 @import '../scss/keyframes.scss';
 @import '../css/swiper.css';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     background-color: var(--primary-color);
@@ -36,17 +40,6 @@ body {
 }
 
 .portfolio {
-    &__header {
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: var(--hHeader);
-    }
-
     &__logo {
         text-decoration: none;
         font-size: calc-rem(30px);
@@ -66,6 +59,18 @@ body {
     }
 
     &__main {}
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--hHeader);
+    background-color: var(--primary-color);
 }
 
 .navigation {
