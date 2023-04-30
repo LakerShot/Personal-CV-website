@@ -33,8 +33,8 @@ body {
         height: 50px;
         position: fixed;
         background-size: cover;
-        left: 0;
-        bottom: 0;
+        left: -1px;
+        bottom: -1px;
         background-image: url("./../../assets/images/javascript.png");
     }
 }
