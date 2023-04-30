@@ -1,31 +1,35 @@
 .content-container {
-  width: 100%;
-  max-width: calc($mwContent + var(--pContent) * 2);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--pContent);
-  padding-right: var(--pContent);
+    width: 100%;
+    max-width: calc($mwContent + var(--pContent) * 2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--pContent);
+    padding-right: var(--pContent);
+
+    &--hidden {
+        display: none;
+    }
 }
 
 .btn {
-  padding: calc-rem(15px) calc-rem(30px);
-  background-color: var(--accent-color);
-  color: var(--primary-color);
-  border: 2px solid transparent;
-  outline: none;
-  font-weight: bold;
-  font-size: calc-rem(18px);
-  min-width: calc-rem(200px);
-  border-radius: $baseBorderRadius;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
+    padding: calc-rem(15px) calc-rem(30px);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: bold;
+    font-size: calc-rem(18px);
+    min-width: calc-rem(200px);
+    border-radius: $baseBorderRadius;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 
-  &:hover,
-  &:focus {
-    background-color: var(--accent-light-color);
-  }
+    &:hover,
+    &:focus {
+        background-color: var(--accent-light-color);
+    }
 
-  &:focus {
-    border-color: var(--third-party-color);
-  }
+    &:focus {
+        border-color: var(--third-party-color);
+    }
 }

@@ -37,3 +37,26 @@
         opacity: 1;
     }
 }
+
+@keyframes drop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: calc-rem(105px);
+        transform: rotateX(-360deg);
+    }
+    80% {
+        opacity: 1;
+        top: calc-rem(105px);
+        transform: rotateX(-360deg);
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: calc-rem(210px);
+    }
+}
