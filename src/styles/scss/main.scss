@@ -2,6 +2,7 @@
 @import '../scss/variables-sass';
 @import '../css/variables-css';
 @import '../scss/functions.scss';
+@import '../scss/mixins.scss';
 @import '../scss/fonts.scss';
 @import '../scss/common.scss';
 @import '../scss/keyframes.scss';
@@ -598,12 +599,38 @@ body {
     }
 
     &__container {
+        width: fit-content;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        transition: all .3s ease-in;
+    }
+
+
+    &__wrapper {
         display: flex;
         align-items: center;
         width: fit-content;
-        margin: 0 auto;
         gap: calc-rem(30px);
         margin-bottom: calc-rem(80px);
+        transition: all .3s ease-in;
+    }
+
+    &__frontend {
+        transform: translateX(-85%);
+
+        &--unselected {
+            transform: translateX(100%);
+        }
+    }
+
+    &__backend {
+        transform: translateX(-110%);
+
+        &--selected {
+            transform: translateX(15.1%);
+        }
     }
 
     &__bars {
@@ -658,7 +685,7 @@ body {
         &--javascript {
             width: 95%;
 
-            &:after{
+            &:after {
                 content: "95%";
             }
         }
@@ -666,7 +693,7 @@ body {
         &--react {
             width: 95%;
 
-            &:after{
+            &:after {
                 content: "95%";
             }
         }
@@ -674,23 +701,23 @@ body {
         &--vue {
             width: 95%;
 
-            &:after{
+            &:after {
                 content: "95%";
             }
         }
 
         &--angular {
-            width: 60%;
+            width: 70%;
 
-            &:after{
-                content: "60%";
+            &:after {
+                content: "70%";
             }
         }
 
         &--git {
             width: 85%;
 
-            &:after{
+            &:after {
                 content: "85%";
             }
         }
@@ -698,7 +725,7 @@ body {
         &--html {
             width: 95%;
 
-            &:after{
+            &:after {
                 content: "95%";
             }
         }
@@ -706,7 +733,7 @@ body {
         &--css {
             width: 90%;
 
-            &:after{
+            &:after {
                 content: "90%";
             }
         }
@@ -714,7 +741,7 @@ body {
         &--typescript {
             width: 85%;
 
-            &:after{
+            &:after {
                 content: "85%";
             }
         }
@@ -722,7 +749,7 @@ body {
         &--vitest {
             width: 50%;
 
-            &:after{
+            &:after {
                 content: "50%";
             }
         }
@@ -730,8 +757,88 @@ body {
         &--bundler {
             width: 65%;
 
-            &:after{
+            &:after {
                 content: "65%";
+            }
+        }
+
+        &--nodeJs {
+            width: 80%;
+
+            &:after {
+                content: "80%";
+            }
+        }
+
+        &--express {
+            width: 75%;
+
+            &:after {
+                content: "75%";
+            }
+        }
+
+        &--nest {
+            width: 40%;
+
+            &:after {
+                content: "40%";
+            }
+        }
+
+        &--rest {
+            width: 90%;
+
+            &:after {
+                content: "90%";
+            }
+        }
+
+        &--graphQL {
+            width: 50%;
+
+            &:after {
+                content: "50%";
+            }
+        }
+
+        &--sql {
+            width: 55%;
+
+            &:after {
+                content: "55%";
+            }
+        }
+
+        &--postgresql {
+            width: 65%;
+
+            &:after {
+                content: "65%";
+            }
+        }
+
+        &--mongoDB {
+            width: 65%;
+
+            &:after {
+                content: "65%";
+            }
+        }
+
+        &--typeorm {
+            width: 55%;
+
+            &:after {
+                content: "55%";
+            }
+        }
+
+        &--redis {
+            width: 45%;
+
+            &:after {
+                content: "45%";
             }
         }
 
@@ -885,4 +992,8 @@ body {
     &__author {
         font-size: calc-rem(12px);
     }
+}
+
+.skeleton {
+    @include skeleton-animation;
 }
