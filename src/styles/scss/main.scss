@@ -160,12 +160,17 @@ body {
     position: sticky;
     top: 0;
     z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     height: var(--hHeader);
     background-color: var(--primary-color);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .navigation {
@@ -620,6 +625,10 @@ body {
     &__frontend {
         transform: translateX(-85%);
 
+        @media #{$specificXL} {
+            transform: translateX(-94%);
+        }
+
         &--unselected {
             transform: translateX(100%);
         }
@@ -630,6 +639,10 @@ body {
 
         &--selected {
             transform: translateX(15.1%);
+
+            @media #{$specificXL} {
+                transform: translateX(6%);
+            }
         }
     }
 
