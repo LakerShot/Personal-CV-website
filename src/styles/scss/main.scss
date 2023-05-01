@@ -78,41 +78,42 @@ body {
         transform: rotateX(-90deg);
         color: var(--accent-light-color);
         margin-bottom: 20px;
-    }
-    &--l {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: .6s;
-    }
 
-    &--o {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: .7s;
-    }
+        &--l {
+            animation: drop 1.2s ease-in-out infinite;
+            animation-delay: .6s;
+        }
 
-    &--a {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: .8s;
-    }
+        &--o {
+            animation: drop 1.2s ease-in-out infinite;
+            animation-delay: .7s;
+        }
 
-    &--d {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: .9s;
+        &--a {
+            animation: drop 1.2s ease-in-out infinite;
+            animation-delay: .8s;
+        }
 
-    }
+        &--d {
+            animation: drop 1.2s ease-in-out infinite;
+            animation-delay: .9s;
 
-    &--i {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: 1s;
-    }
+        }
 
-    &--n {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: 1.1s;
-    }
+        &--i {
+            animation: drop 1.2s ease-in-out infinite;
+            animation-delay: 1s;
+        }
 
-    &--g {
-        animation: drop 1.2s ease-in-out infinite;
-        animation-delay: 1.2s;
+        &--n {
+            animation: drop 1.2s ease-in-out infinite;
+            animation-delay: 1.1s;
+        }
+
+        &--g {
+            animation: drop 1.2s ease-in-out infinite;
+            animation-delay: 1.2s;
+        }
     }
 }
 
