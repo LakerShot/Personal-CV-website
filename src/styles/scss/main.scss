@@ -392,7 +392,7 @@ body {
             padding: calc-rem(24px);
             background: var(--secondary-color);
             box-shadow: 0 0 calc-rem(5px) rgba(0, 0, 0, 0.2);
-            border-radius: calc-rem(10px);
+            border-radius: $baseBorderRadius;
         }
 
         &--vue,
@@ -508,6 +508,8 @@ body {
         margin-bottom: calc-rem(80px);
     }
 
+    &__container {}
+
     &__image-container {
         position: relative;
         height: 60px;
@@ -540,6 +542,7 @@ body {
 
     &__carousel {
         cursor: grab;
+
     }
 
     &__image {
@@ -1026,3 +1029,9 @@ body {
         font-size: calc-rem(12px);
     }
 }
+
+.swiper-slide {
+    border-radius: calc-rem(10px);
+    border: 10px solid var(--secondary-color);
+}
+
