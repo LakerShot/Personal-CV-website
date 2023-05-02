@@ -278,6 +278,7 @@ body {
         width: 100%;
         height: 100%;
         border-radius: $baseBorderRadius;
+        border: 10px solid var(--secondary-color);
     }
 
     &__mark {
