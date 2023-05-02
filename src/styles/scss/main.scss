@@ -144,8 +144,11 @@ body {
         font-weight: bold;
         transition: all .2s ease-in;
         font-family: $fnKaushan, cursive;
+        padding: calc-rem(10px) calc-rem(20px);
+        outline-color: var(--accent-color);
 
-        &:hover {
+        &:hover,
+        &:focus {
             text-shadow: 0 0 5px #ffc836,
             0 0 25px #ffc836,
             0 0 50px #ffc836,
@@ -158,8 +161,6 @@ body {
         align-items: center;
         gap: calc-rem(15px);
     }
-
-    &__main {}
 }
 
 .header {
@@ -356,7 +357,8 @@ body {
     }
 
     &__pre-title {
-        margin: 0 0 calc-rem(40px);
+        width: fit-content;
+        margin: 0 auto calc-rem(40px);
     }
 
     &__sub-title {
@@ -489,9 +491,6 @@ body {
 
     &__date {
         margin-bottom: calc-rem(40px);
-    }
-
-    &__pre-title {
     }
 }
 
@@ -921,8 +920,6 @@ body {
 }
 
 .contact-me {
-    &__title {}
-
     &__heading {
         display: flex;
         align-items: center;
