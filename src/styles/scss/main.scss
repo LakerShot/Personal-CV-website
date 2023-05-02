@@ -34,8 +34,8 @@ body {
         height: 50px;
         position: fixed;
         background-size: cover;
-        left: -1px;
-        bottom: -1px;
+        left: -2px;
+        bottom: -2px;
         background-image: url("./../../assets/images/javascript.png");
         border-radius: $baseBorderRadius;
     }
@@ -794,10 +794,10 @@ body {
         }
 
         &--nest {
-            width: 40%;
+            width: 45%;
 
             &:after {
-                content: "40%";
+                content: "45%";
             }
         }
 
@@ -810,6 +810,14 @@ body {
         }
 
         &--graphQL {
+            width: 60%;
+
+            &:after {
+                content: "60%";
+            }
+        }
+
+        &--typeorm {
             width: 50%;
 
             &:after {
