@@ -9,6 +9,7 @@ import { initContactMeForm } from "./form";
 import { initCurrentTime } from "./current-time";
 import { hideLoader } from "./loader";
 import { initThemeMode } from "./theme";
+import { timeDelayToInitProject } from "./constants";
 
 const initProject = (): void => {
     hideLoader();
@@ -22,5 +23,7 @@ const initProject = (): void => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initProject();
+    setTimeout(() => {
+        initProject();
+    }, timeDelayToInitProject)
 })
