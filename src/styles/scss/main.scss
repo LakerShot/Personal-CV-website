@@ -139,13 +139,17 @@ body {
 
     &__logo {
         text-decoration: none;
-        font-size: calc-rem(30px);
+        font-size: calc-rem(35px);
         color: var(--text-primary-color);
         font-weight: bold;
-        transition: color .2s ease-in-out;
+        transition: all .2s ease-in;
+        font-family: $fnKaushan, cursive;
 
         &:hover {
-            color: var(--accent-light-color);
+            text-shadow: 0 0 5px #ffc836,
+            0 0 25px #ffc836,
+            0 0 50px #ffc836,
+            0 0 100px #ffc836;
         }
     }
 
