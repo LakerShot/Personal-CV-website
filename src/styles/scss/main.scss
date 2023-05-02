@@ -508,8 +508,6 @@ body {
         margin-bottom: calc-rem(80px);
     }
 
-    &__container {}
-
     &__image-container {
         position: relative;
         height: 60px;
@@ -1031,7 +1029,6 @@ body {
 }
 
 .swiper-slide {
-    border-radius: calc-rem(10px);
-    border: 10px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color);
 }
 
