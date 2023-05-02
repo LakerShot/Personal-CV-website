@@ -1,1 +1,1 @@
-export const timeDelayToInitProject = 500;
+export const timeDelayToInitProject = 300;
