@@ -42,6 +42,14 @@ body {
 }
 
 .portfolio {
+    &__content {
+        display: block;
+
+        &--hiddent {
+            display: none;
+        }
+    }
+
     &__widget {
         height: 100%;
         display: flex;

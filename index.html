@@ -13,10 +13,8 @@
 </head>
 <body>
 <section id="app" class="portfolio">
-
-<!--    Loader-->
-
-    <div class="portfolio__loader">
+<!--    TODO: Remove style cuz it's affects on specificity-->
+    <div class="portfolio__loader" style="background-color: #202020; width: 100vw; height: 100vh; overflow: hidden; color: white; display: grid; place-items: center">
         <h1 class="portfolio__loader-wrapper loader">
             <span class="loader__letter loader__letter--l">l</span>
             <span class="loader__letter loader__letter--o">o</span>
@@ -28,9 +26,7 @@
         </h1>
     </div>
 
-
-    <section class="app-container app-container--hidden">
-
+    <section style="display: none" class="portfolio__content--hidden app-container">
         <header class="portfolio__header header">
            <div class="portfolio__inner header__inner content-container header">
                <a href="#" class="portfolio__logo">Egor Morozov</a>
