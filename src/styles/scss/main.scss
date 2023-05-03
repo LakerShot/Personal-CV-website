@@ -12,6 +12,13 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    &::selection {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+    }
+}
+
 body {
     position: relative;
     background-color: var(--primary-color);
