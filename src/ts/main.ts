@@ -9,12 +9,14 @@ import { initContactMeForm } from "./form";
 import { initCurrentTime } from "./current-time";
 import { hideLoader } from "./loader";
 import { initThemeMode } from "./theme";
+import { initBurger } from "./burger";
 import { timeDelayToInitProject } from "./constants";
 
-const initProject = (): void => {
+const initResumeProject = (): void => {
     hideLoader();
     initAnimation();
     initNavigation();
+    initBurger();
     initThemeMode();
     initEducationCarousel();
     initSkills();
@@ -24,6 +26,6 @@ const initProject = (): void => {
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        initProject();
+        initResumeProject();
     }, timeDelayToInitProject)
 })

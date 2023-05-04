@@ -80,6 +80,10 @@ body {
         padding: calc-rem(5px);
         transition: all .2s ease-in;
 
+        @media #{$mSm} {
+            display: none;
+        }
+
         &:hover,
         &:focus {
             border-color: var(--accent-light-color);
@@ -94,6 +98,96 @@ body {
             width: calc-rem(25px);
             height: calc-rem(25px);
         }
+    }
+}
+
+.burger {
+    display: none;
+    width: calc-rem(40px);
+    height: 100%;
+
+    &__button {
+        background-color: transparent;
+        border: none;
+
+        &:focus {
+            outline-color: var(--accent-light-color);
+        }
+
+        &:hover {
+            color: var(--accent-light-color);
+        }
+
+        &--opened {
+            .burger__line--top {
+                transform: rotate(45deg);
+            }
+
+            .burger__line--middle {
+                transform: scaleY(0);
+            }
+
+            .burger__line--bottom {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @media #{$mSm} {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        appearance: none;
+    }
+
+    &__lines {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: calc-rem(10px);
+        cursor: pointer;
+    }
+
+    &__line {
+        display: block;
+        height: calc-rem(4px);
+        width: 100%;
+        border-radius: $baseBorderRadius;
+        background: var(--accent-color);
+
+        &--top {
+            transform-origin: 0% 0%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &--middle {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        &--bottom {
+            transform-origin: 0% 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+}
+
+.burger-menu {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    min-width: calc-rem(250px);
+    background-color: var(--primary-color);
+    z-index: 2;
+
+    &__navigation {
+        margin-top: calc-rem(40px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: calc-rem(35px);
     }
 }
 
@@ -174,7 +268,6 @@ body {
         font-weight: bold;
         transition: all .2s ease-in;
         font-family: $fnKaushan, cursive;
-        padding: calc-rem(10px) calc-rem(20px);
         outline-color: var(--accent-color);
 
         @media #{$mLg} {
@@ -196,7 +289,11 @@ body {
         gap: calc-rem(15px);
 
         @media #{$mMd} {
-            gap: calc-rem(10px);
+            gap: calc-rem(5px);
+        }
+
+        @media #{$mSm} {
+            display: none;
         }
     }
 }
