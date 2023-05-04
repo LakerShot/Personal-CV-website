@@ -23,6 +23,12 @@
     border-radius: $baseBorderRadius;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    text-align: center;
+
+    @media #{$mMd} {
+        font-size: calc-rem(16px);
+        padding: calc-rem(12.5px) calc-rem(25px);
+    }
 
     &:hover,
     &:focus {
