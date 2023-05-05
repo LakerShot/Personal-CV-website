@@ -181,6 +181,17 @@ body {
     min-width: calc-rem(250px);
     background-color: var(--primary-color);
     z-index: 2;
+    display: none;
+    transform: translateX(100%);
+    transition: transform .3s ease-in;
+
+    &--opened {
+        transform: translateX(0);
+    }
+
+    @media #{$mSm} {
+        display: block;
+    }
 
     &__navigation {
         margin-top: calc-rem(40px);
