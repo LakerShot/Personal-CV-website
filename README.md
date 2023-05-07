@@ -5,6 +5,8 @@
 - 2k
 - 1920 * 1080
 - 1377 * 768
+- Tablets devices
+- Mobile devices
 
 ## Installation
 
