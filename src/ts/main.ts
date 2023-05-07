@@ -10,6 +10,7 @@ import { initCurrentTime } from "./current-time";
 import { hideLoader } from "./loader";
 import { initThemeMode } from "./theme";
 import { initBurger } from "./burger";
+import { initAsideNavigation } from "./aside-navigation";
 import { timeDelayToInitProject } from "./constants";
 
 const initResumeProject = (): void => {
@@ -17,6 +18,7 @@ const initResumeProject = (): void => {
     initAnimation();
     initNavigation();
     initBurger();
+    initAsideNavigation();
     initThemeMode();
     initEducationCarousel();
     initSkills();

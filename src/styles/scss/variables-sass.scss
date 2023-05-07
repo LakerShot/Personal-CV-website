@@ -32,6 +32,7 @@ $bLg: 1200px;
 $bMd: 992px;
 $bSm: 768px;
 $bXs: 576px;
+$bXxs: 430px;
 
 $bMinWidth: 375px;
 
@@ -48,6 +49,7 @@ $mLg: '(max-width: #{$bLg - 1})';
 $mMd: '(max-width: #{$bMd - 1})';
 $mSm: '(max-width: #{$bSm - 1})';
 $mXs: '(max-width: #{$bXs - 1})';
+$mXXs: '(max-width: #{$bXxs - 1})';
 
 $mMoreXl: '(min-width: #{$bXl})';
 $mMoreLg: '(min-width: #{$bLg})';

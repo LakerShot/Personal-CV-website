@@ -1,4 +1,5 @@
-const themeButton = document.querySelector<HTMLButtonElement>('.portfolio__theme-btn');
+const headerThemeButton = document.querySelector<HTMLButtonElement>('.portfolio__theme-btn');
+const asideThemeButton = document.querySelector<HTMLButtonElement>('.aside__theme-btn');
 const themeIcon = document.querySelector<HTMLImageElement>('.portfolio__theme-icon');
 const html = document.querySelector<HTMLHtmlElement>('html');
 
@@ -19,5 +20,6 @@ export const initThemeMode = () => {
         }
     }
 
-    themeButton.addEventListener('click', toggleThemeHandler)
+    headerThemeButton.addEventListener('click', toggleThemeHandler)
+    asideThemeButton.addEventListener('click', toggleThemeHandler)
 }

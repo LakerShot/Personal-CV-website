@@ -48,7 +48,7 @@
                            <a href="#contactMe" class="navigation__link">Contact Me</a>
                        </li>
                    </ul>
-                   <button class="portfolio__theme-btn">
+                   <button class="portfolio__theme-btn portfolio__theme-btn--header">
                        <img class="portfolio__theme-icon" src="./src/assets/svg/bulb.svg" alt="toggle theme mode">
                    </button>
                    <div class="portfolio__burger burger">
@@ -62,25 +62,51 @@
            </div>
         </header>
 
-        <aside class="burger-menu">
-            <ul class="burger-menu__navigation navigation">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link navigation__about navigation__link--active">About</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#journey" class="navigation__link">Journey</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#skills" class="navigation__link">Skills</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#education" class="navigation__link">Education</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#contactMe" class="navigation__link">Contact Me</a>
-                </li>
-            </ul>
-        </aside>
+        <div class="overlay">
+            <aside class="burger-menu">
+                <ul class="burger-menu__navigation navigation">
+                    <li class="navigation__item">
+                        <a href="#" class="burger-menu__link burger-menu__link--active">About</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#journey" class="burger-menu__link">Journey</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#skills" class="burger-menu__link">Skills</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#education" class="burger-menu__link">Education</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contactMe" class="burger-menu__link">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="burger-menu__theme-wrapper">
+                    <button class="aside__theme-btn portfolio__theme-btn">
+                        <img class="portfolio__theme-icon" src="./src/assets/svg/bulb.svg" alt="toggle theme mode">
+                    </button>
+                </div>
+                <div class="burger-menu__links-wrapper">
+                    <ul class="main__links main__links--row">
+                        <li class="main__element">
+                            <a href="https://github.com/LakerShot" class="main__link" target="_blank" rel="noopener">
+                                <img class="main__image-link main__image-link--circle" src="./src/assets/svg/github.svg" alt="github">
+                            </a>
+                        </li>
+                        <li class="main__element">
+                            <a href="https://t.me/egorMrJsDev" class="main__link" target="_blank" rel="noopener">
+                                <img class="main__image-link main__image-link--circle" src="./src/assets/svg/telegram.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="main__element">
+                            <a href="https://www.linkedin.com/in/egor-morozov-a39ab71b5/" class="main__link" target="_blank" rel="noopener">
+                                <img class="main__image-link" src="./src/assets/svg/linkedin.svg" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
 
         <main class="content-container portfolio__main main">
 
@@ -113,7 +139,7 @@
                         <p class="main__about">
                             Web developer with almost <mark class="main__mark">4 years</mark> of front end experience and passion for clean code/architecture, responsive website design and a firm believer in responsible approach to develop
                         </p>
-                        <a href="CVMorozovEgor.pdf" class="main__contact-me btn" download type="button" aria-label="Contact me">
+                        <a href="CVMorozovEgor.pdf" class="main__contact-me-btn btn" download type="button" aria-label="Contact me">
                             Download CV
                         </a>
                     </div>
@@ -132,7 +158,7 @@
                 <h3 class="journey__sub-title">My personal journey</h3>
                 <h3 class="journey__pre-title" tabindex="0">Work experience</h3>
                 <div class="journey__timeline timeline">
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__date-wrapper">
                         <div class="timeline__date timeline__date--right">June 2022 - Present</div>
                     </div>
                     <div class="timeline__middle">
@@ -151,7 +177,7 @@
                             Created a couple of tables with infinite pagination and also developed several independent widgets such as: sidebar, ticker panel, etc.
                         </p>
                     </div>
-                    <div class="timeline__component timeline__component--bg timeline__component--angular">
+                    <div class="timeline__component timeline__component--desktop timeline__component--bg timeline__component--angular">
                         <h2 class="timeline__title">Crimtan</h2>
                         <h5 class="timeline__pre-title">London, United Kingdom, Remote, Full-time, (9 months)</h5>
                         <p class="timeline__paragraph">
@@ -161,13 +187,27 @@
                             Delivered features and participated in sprint planning. Slightly rewrote engine form. Improved table navigation and a11y support.
                         </p>
                     </div>
-                    <div class="timeline__middle">
+                    <div class="timeline__middle timeline__middle--desktop">
                         <div class="timeline__point"></div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__component timeline__date-wrapper timeline__component--desktop">
                         <div class="timeline__date">September 2021 - May 2022</div>
                     </div>
-                    <div class="timeline__component">
+                    <div class="timeline__middle timeline__middle--xs">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component--xs timeline__component--bg timeline__component--angular">
+                        <h2 class="timeline__title">Crimtan</h2>
+                        <h5 class="timeline__pre-title">London, United Kingdom, Remote, Full-time, (9 months)</h5>
+                        <p class="timeline__paragraph">
+                            Transferred the core features from AngularJs to a new one Angular app.
+                        </p>
+                        <p class="timeline__paragraph">
+                            Delivered features and participated in sprint planning. Slightly rewrote engine form. Improved table navigation and a11y support.
+                        </p>
+                    </div>
+
+                    <div class="timeline__component timeline__date-wrapper">
                         <div class="timeline__date timeline__date--right">November 2019 - November 2021</div>
                     </div>
                     <div class="timeline__middle">
