@@ -37,8 +37,8 @@ body {
     &:after {
         content: '';
         display: block;
-        width: calc-rem(50px);
-        height: calc-rem(50px);
+        width: calc-rem(40px);
+        height: calc-rem(40px);
         position: fixed;
         background-size: cover;
         left: -2px;
