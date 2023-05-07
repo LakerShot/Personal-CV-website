@@ -1010,6 +1010,10 @@ body {
         align-items: center;
         gap: calc-rem(50px);
         margin-bottom: calc-rem(80px);
+
+        @media #{$mXXs} {
+            margin-bottom: calc-rem(40px);
+        }
     }
 
     &__decor {
@@ -1028,6 +1032,21 @@ body {
 
         &--initial {
             animation: .3s counterClockWise ease-in-out forwards;
+        }
+
+        @media #{$mSm} {
+            width: calc-rem(36px);
+            right: 44.3%;
+        }
+
+        @media #{$mXs} {
+            width: calc-rem(32px);
+            right: 44.7%;
+        }
+
+        @media #{$mXs} {
+            width: calc-rem(30px);
+            right: 44.7%;
         }
     }
 
@@ -1064,12 +1083,24 @@ body {
                 background-color: var(--accent-color);
             }
         }
+
+        @media #{$mMd} {
+            font-size: calc-rem(18px);
+        }
+
+        @media #{$mSm} {
+            font-size: calc-rem(16px);
+        }
+
+        @media #{$mXXs} {
+            font-size: calc-rem(14px);
+        }
     }
 
     &__container {
-        width: fit-content;
+        width: 100%;
         margin: 0 auto;
-        overflow: hidden;
+        overflow-x: hidden;
         display: flex;
         align-items: center;
         transition: all .3s ease-in;
@@ -1083,6 +1114,10 @@ body {
         gap: calc-rem(30px);
         margin-bottom: calc-rem(80px);
         transition: all .3s ease-in;
+
+        @media #{$mSm} {
+            flex-direction: column;
+        }
     }
 
     &__frontend {
@@ -1090,6 +1125,26 @@ body {
 
         @media #{$specificXL} {
             transform: translateX(-94%);
+        }
+
+        @media #{$mXl} {
+            transform: translateX(-96%);
+        }
+
+        @media #{$mLg} {
+            transform: translateX(-95%);
+        }
+
+        @media #{$mMd} {
+            transform: translateX(-94%);
+        }
+
+        @media #{$mSm} {
+            transform: translateX(-78%);
+        }
+
+        @media #{$mXs} {
+            transform: translateX(-96%);
         }
 
         &--unselected {
@@ -1106,6 +1161,26 @@ body {
             @media #{$specificXL} {
                 transform: translateX(6%);
             }
+
+            @media #{$mXl} {
+                transform: translateX(3.5%);
+            }
+
+            @media #{$mLg} {
+                transform: translateX(4.5%);
+            }
+
+            @media #{$mMd} {
+                transform: translateX(5.5%);
+            }
+
+            @media #{$mSm} {
+                transform: translateX(23%);
+            }
+
+            @media #{$mXs} {
+                transform: translateX(4%);
+            }
         }
     }
 
@@ -1115,6 +1190,22 @@ body {
         background: var(--secondary-color);
         box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
         border-radius: $baseBorderRadius;
+
+        @media #{$mLg} {
+            width: calc-rem(500px);
+        }
+
+        @media #{$mMd} {
+            width: calc-rem(400px);
+        }
+
+        @media #{$mSm} {
+            width: calc-rem(500px);
+        }
+
+        @media #{$mXXs} {
+            width: calc-rem(330px);
+        }
     }
 
     &__bar {
@@ -1134,6 +1225,10 @@ body {
         font-size: calc-rem(16px);
         opacity: 0;
         animation: show 0.5s 1s linear forwards;
+
+        @media #{$mMd} {
+            font-size: calc-rem(14px);
+        }
     }
 
     &__progress-line {
@@ -1354,6 +1449,10 @@ body {
             padding: calc-rem(4px) calc-rem(8px);
             font-size: calc-rem(12px);
             border-radius: calc-rem(3px);
+
+            @media #{$mMd} {
+                font-size: calc-rem(10px);
+            }
         }
     }
     &__additional {
@@ -1374,6 +1473,11 @@ body {
         max-width: calc-rem(700px);
         margin: 0 auto;
         line-height: 1.7;
+
+
+        @media #{$mMd} {
+            font-size: calc-rem(12px);
+        }
     }
 }
 
@@ -1433,6 +1537,12 @@ body {
         display: block;
         visibility: hidden;
         pointer-events: none;
+
+        @media #{$mXs} {
+            top: calc-rem(22px);
+            right: calc-rem(22px);
+        }
+
 
         &--visible {
             visibility: visible;
