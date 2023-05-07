@@ -12,7 +12,7 @@
     <title>Personal Site</title>
 </head>
 <body>
-<section id="app" class="portfolio">
+<section id="app" class="portfolio" aria-haspopup="dialog">
 <!--    TODO: Remove style cuz it's affects on specificity-->
     <div class="portfolio__loader" style="background-color: #202020; width: 100vw; height: 100vh; overflow: hidden; font-size: 25px; color: #daa30e; text-transform: uppercase; display: grid; place-items: center">
         <h1 class="portfolio__loader-wrapper loader">
@@ -62,8 +62,8 @@
            </div>
         </header>
 
-        <div class="overlay">
-            <aside class="burger-menu">
+        <div class="overlay" role="dialog" aria-modal="true" aria-live="assertive" aria-label="Close">
+            <aside class="burger-menu" aria-label="Navigation popup menu">
                 <ul class="burger-menu__navigation navigation">
                     <li class="navigation__item">
                         <a href="#" class="burger-menu__link burger-menu__link--active">About</a>

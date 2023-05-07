@@ -17,6 +17,15 @@ export const initBurger = (): void => {
         }
     }
 
+    const escapeKeyHandler = (event: KeyboardEvent) => {
+        if (event.key === 'Escape' || event.keyCode === 27 ) {
+            burgerHandler();
+        }
+    }
+
+    // TODO: handle inert attribute when modal is open
+
     burger.addEventListener('click', burgerHandler);
     overlay.addEventListener('click', overlayHandler)
+    window.addEventListener('keyup', escapeKeyHandler)
 }
