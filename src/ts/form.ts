@@ -1,5 +1,7 @@
 import { ApiRequest } from "./api-request";
-import { successToast} from "./toast";
+import { successToast } from "./toast";
+import { ContactMe } from "./models";
+import { PermittedInputFields } from "./constants";
 
 const contactMeForm = document.querySelector<HTMLFormElement>('.contact-me__form');
 const nameInput = document.querySelector<HTMLInputElement>('.contact-me__name')
@@ -9,7 +11,7 @@ const submitButton = document.querySelector<HTMLButtonElement>('.contact-me__sen
 const invalidEmailField = document.querySelector('.contact-me__error');
 
 export const initContactMeForm = (): void => {
-    const formDto = {
+    const formDto: ContactMe = {
         name: '',
         email: '',
         message: ''
@@ -19,20 +21,22 @@ export const initContactMeForm = (): void => {
 
     type InputFields = keyof typeof formDto;
 
-    const handleFormFields = (inputType: InputFields, event): void => {
-        formDto[inputType] = event.target.value.trim();
+    const handleFormFields = (inputType: InputFields, event: KeyboardEvent): void => {
+        const target = event.target as HTMLInputElement | HTMLTextAreaElement;
+
+        formDto[inputType] = target.value.trim();
         submitButton.disabled = !checkIsAllFieldsSettled();
     }
-    const nameInputHandler = event => {
-        handleFormFields('name', event)
+    const nameInputHandler = (event: KeyboardEvent) => {
+        handleFormFields(PermittedInputFields.Name, event)
     }
 
-    const emailInputHandler = event => {
-        handleFormFields('email', event)
+    const emailInputHandler = (event: KeyboardEvent) => {
+        handleFormFields(PermittedInputFields.Email, event)
     }
 
-    const messageInputHandler = event => {
-        handleFormFields('message', event)
+    const messageInputHandler = (event: KeyboardEvent) => {
+        handleFormFields(PermittedInputFields.Message, event)
     }
 
     const checkIsAllFieldsSettled = (): boolean => {
@@ -55,7 +59,7 @@ export const initContactMeForm = (): void => {
             inputField.value = '';
         })
         Object.keys(formDto).forEach(key => {
-            formDto[key] = '';
+            formDto[key as InputFields] = '';
         });
     }
 

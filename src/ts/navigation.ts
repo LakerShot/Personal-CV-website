@@ -15,7 +15,7 @@ export const initNavigation = () => {
         aboutLink.classList.add('navigation__link--active');
     }
 
-    const navigationHandler = event => {
+    const navigationHandler = (event: MouseEvent) => {
         const selectedLink = event.target as HTMLLinkElement;
 
         if(selectedLink.classList.contains('navigation__link--active')) {

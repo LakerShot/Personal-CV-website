@@ -7,7 +7,7 @@ export const initAsideNavigation = () => {
         })
     }
 
-    const navigationHandler = event => {
+    const navigationHandler = (event: MouseEvent) => {
         const selectedLink = event.target as HTMLLinkElement;
 
         if(selectedLink.classList.contains('burger-menu__link--active')) {

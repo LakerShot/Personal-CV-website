@@ -5,8 +5,9 @@ const backendSection = document.querySelector<HTMLDivElement>('.skills__backend'
 const frontendSection = document.querySelector<HTMLDivElement>('.skills__frontend');
 
 export const initSkills = (): void => {
-    const handleSkills = (event) => {
+    const handleSkills = (event: MouseEvent) => {
         const selectedButton = event.target as HTMLButtonElement
+
         if (selectedButton.classList.contains('skills__btn--active')) {
             return;
         }

@@ -3,3 +3,7 @@ export interface ContactMe {
     email: string,
     message: string
 }
+
+export interface ResponseStatus {
+    success: boolean;
+}

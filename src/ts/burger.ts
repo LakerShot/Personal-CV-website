@@ -11,8 +11,10 @@ export const initBurger = (): void => {
         overlay.classList.toggle('overlay--opened');
     }
 
-    const overlayHandler = event => {
-        if (event.target.classList.contains('overlay')) {
+    const overlayHandler = (event: MouseEvent) => {
+        const targetElement = event.target as HTMLDivElement;
+
+        if (targetElement.classList.contains('overlay')) {
             burgerHandler();
         }
     }

@@ -1,13 +1,13 @@
-import { ContactMe } from "./models";
+import { ContactMe, ResponseStatus } from "./models";
 
 export class ApiRequest {
     static async sendData (data: ContactMe) {
         // TODO: remove mock request when backend is gonna be ready
-        const { success } = await ApiRequest.mockPostRequest();
+        const { success } = await ApiRequest.mockPostRequest(data);
         return success;
     }
 
-    static async postRequest (dto: ContactMe) {
+    static async postRequest (dto: ContactMe): Promise<ResponseStatus> {
         const rawResponse = await fetch('https://api/sendMessage', {
             method: 'POST',
             headers: {
@@ -20,7 +20,8 @@ export class ApiRequest {
         return response
     }
 
-    static async mockPostRequest () {
-        return new Promise(resolve => resolve({ success: true }))
+    static async mockPostRequest (data: ContactMe): Promise<ResponseStatus> {
+        console.table(data)
+        return new Promise<ResponseStatus>(resolve => resolve({ success: true }))
     }
 }
