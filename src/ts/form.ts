@@ -17,7 +17,7 @@ export const initContactMeForm = (): void => {
         message: ''
     }
 
-    const emailRexExp = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
+    const emailRegExp = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
 
     type InputFields = keyof typeof formDto;
 
@@ -44,7 +44,7 @@ export const initContactMeForm = (): void => {
     }
 
     const validateEmailField = () => {
-        const isEmailValid = emailRexExp.test(formDto.email)
+        const isEmailValid = emailRegExp.test(formDto.email)
         if (!isEmailValid) {
             invalidEmailField.classList.add('contact-me__error--visible')
         } else {
