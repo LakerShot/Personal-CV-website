@@ -1162,6 +1162,10 @@ body {
             transform: translateX(-96%);
         }
 
+        @media #{$specificXxs} {
+            transform: translateX(-100%);
+        }
+
         &--unselected {
             transform: translateX(100%);
         }
@@ -1199,6 +1203,10 @@ body {
 
             @media #{$mXs} {
                 transform: translateX(4%);
+            }
+
+            @media #{$specificXxs} {
+                transform: translateX(0%);
             }
         }
     }

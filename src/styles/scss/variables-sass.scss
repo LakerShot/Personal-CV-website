@@ -66,4 +66,6 @@ $mHXs: '(max-height: #{$bHXs - 1})';
 $mMinWidth: '(max-width: #{$bMinWidth - 1})';
 $mMaxContent: '(max-width: #{$mwContent + 2 * $pContent})';
 $mPhoneHorizontal: '#{$mMd} and #{$mHXs} and (orientation: landscape)';
+
 $specificXL: '(width: 1440px) and (orientation: landscape)';
+$specificXxs: '(max-width: 361px)';
