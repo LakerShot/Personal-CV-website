@@ -1,3 +1,5 @@
+import { mSm } from "./constants";
+
 const burger = document.querySelector<HTMLButtonElement>('.burger__button');
 const burgerMenu = document.querySelector<HTMLElement>('.burger-menu')
 const header = document.querySelector<HTMLHeadingElement>('.header');
@@ -20,7 +22,7 @@ export const initBurger = (): void => {
     }
 
     const escapeKeyHandler = (event: KeyboardEvent) => {
-        if (event.key === 'Escape' || event.keyCode === 27 ) {
+        if (mSm.matches && (event.key === 'Escape' || event.keyCode === 27 )) {
             burgerHandler();
         }
     }

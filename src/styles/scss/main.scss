@@ -1050,6 +1050,17 @@ body {
         }
     }
 
+    &__sub-title {
+        position: relative;
+        text-align: center;
+        margin-bottom: calc-rem(80px);
+        color: var(--text-secondary-color);
+
+        @media #{$mXs} {
+            font-size: calc-rem(14px);
+        }
+    }
+
     &__btn {
         position: relative;
         background-color: transparent;
@@ -1497,6 +1508,17 @@ body {
         resize: none;
     }
 
+    &__sub-title {
+        position: relative;
+        text-align: center;
+        margin-bottom: calc-rem(80px);
+        color: var(--text-secondary-color);
+
+        @media #{$mXs} {
+            font-size: calc-rem(14px);
+        }
+    }
+
     &__input {
         width: 100%;
         display: block;
@@ -1629,6 +1651,27 @@ body {
 
         @media #{$mXXs} {
             font-size: calc-rem(8px);
+        }
+    }
+}
+
+.animation {
+    &--react {
+        background-repeat: no-repeat;
+        background-size: calc-rem(50px);
+        background-position: 98% 2%;
+        background-image: url('./../../assets/svg/logo-react.svg');
+
+        @media #{$mMd} {
+            background-size: calc-rem(35px);
+        }
+
+        @media #{$mXs} {
+            background-size: calc-rem(30px);
+        }
+
+        @media #{$mXXs} {
+            background-size: calc-rem(25px);
         }
     }
 }
