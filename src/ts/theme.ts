@@ -11,11 +11,13 @@ export const initThemeMode = () => {
 
         if (theme) {
             html.dataset.theme = '';
-            themeIcon.src = '/src/assets/svg/bulb.svg';
+            themeIcon.classList.remove('portfolio__theme-icon--light')
+            themeIcon.classList.add('portfolio__theme-icon--default')
             localStorage.setItem(themePrefix, 'dark');
         } else {
             html.dataset.theme = 'light';
-            themeIcon.src = '/src/assets/svg/bulb-light.svg';
+            themeIcon.classList.remove('portfolio__theme-icon--default')
+            themeIcon.classList.add('portfolio__theme-icon--light')
             localStorage.setItem(themePrefix, 'light');
         }
     }
