@@ -3,9 +3,9 @@ import { ApiRequest } from "./api-request";
 const downloadLink = document.querySelector<HTMLLinkElement>('.main__contact-me-btn');
 
 export const initDownloadSection = (): void => {
-    const endpointUrl = '/assets/CVMorozovEgor.pdf'
+    const endpointUrl = '/assets/CVMorozovEgor.pdf';
     const downloadHandler = async () => {
-        const blob = await ApiRequest.requestBlob(endpointUrl)
+        const blob = await ApiRequest.requestBlob(endpointUrl);
 
         const fileURL = window.URL.createObjectURL(blob);
         let downloadLink = document.createElement('a');
@@ -14,5 +14,5 @@ export const initDownloadSection = (): void => {
         downloadLink.click();
     }
 
-    downloadLink.addEventListener('click', downloadHandler)
+    downloadLink.addEventListener('click', downloadHandler);
 }
