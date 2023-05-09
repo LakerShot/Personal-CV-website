@@ -20,6 +20,10 @@ export class ApiRequest {
         return response
     }
 
+    static async requestBlob (endpoint: string): Promise<Blob> {
+        return await fetch(endpoint).then((response: Response) => response.blob())
+    }
+
     static async mockPostRequest (data: ContactMe): Promise<ResponseStatus> {
         console.table(data)
         return new Promise<ResponseStatus>(resolve => resolve({ success: true }))

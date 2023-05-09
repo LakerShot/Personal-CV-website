@@ -12,12 +12,14 @@ import { initThemeMode } from "./theme";
 import { initBurger } from "./burger";
 import { initAsideNavigation } from "./aside-navigation";
 import { timeDelayToInitProject } from "./constants";
+import { initDownloadSection } from "./download";
 
 const initResumeProject = (): void => {
     hideLoader();
     initAnimation();
     initNavigation();
     initBurger();
+    initDownloadSection();
     initAsideNavigation();
     initThemeMode();
     initEducationCarousel();
