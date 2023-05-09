@@ -75,14 +75,4 @@ export const initAnimation = () => {
         .from(".contact-me__title", { opacity: 0, duration: .5, y: 20, ease: "power3.out" })
         .from(".contact-me__sub-title", { opacity: 0, duration: .5, y: 20, ease: "power3.out" }, "-=0.2")
         .from(".contact-me__form", { opacity: 0, duration: .7, y: 60, scale: .2, ease: "expo.out" }, "-=0.2")
-
-    gsap.timeline({scrollTrigger: {
-            trigger:"#footer",
-            start:"top 90%",
-            end:"bottom top",
-            toggleActions:"restart none none reverse"
-        }})
-        .from(".footer__copyright", { opacity: 0, duration: .5, y: 20, ease: "power3.out" })
-        .from(".footer__author", { opacity: 0, duration: .5, y: 20, ease: "power3.out" }, "-=0.2")
-
 }
