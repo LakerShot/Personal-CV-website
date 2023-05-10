@@ -763,7 +763,7 @@ body {
         &--react,
         &--angular {
             background-repeat: no-repeat;
-            background-size: calc-rem(50px);
+            background-size: calc-rem(40px);
             background-position: 98% 2%;
 
             @media #{$mMd} {
