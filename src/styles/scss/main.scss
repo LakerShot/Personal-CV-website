@@ -1140,7 +1140,7 @@ body {
     }
 
     &__frontend {
-        transform: translateX(-85%);
+        transform: translateX(-84.7%);
 
         @media #{$mXXl} {
             transform: translateX(-93.6%);
@@ -1183,7 +1183,7 @@ body {
         transform: translateX(-110%);
 
         &--selected {
-            transform: translateX(15.1%);
+            transform: translateX(15%);
 
             @media #{$mXXl} {
                 transform: translateX(6.5%);
