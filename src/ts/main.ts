@@ -7,15 +7,12 @@ import { initEducationCarousel } from "./education-carousel";
 import { initSkills } from "./skills-tabs";
 import { initContactMeForm } from "./form";
 import { initCurrentTime } from "./current-time";
-import { hideLoader } from "./loader";
 import { initThemeMode } from "./theme";
 import { initBurger } from "./burger";
 import { initAsideNavigation } from "./aside-navigation";
-import { timeDelayToInitProject } from "./constants";
 import { initDownloadSection } from "./download";
 
 const initResumeProject = (): void => {
-    hideLoader();
     initAnimation();
     initNavigation();
     initBurger();
@@ -29,7 +26,5 @@ const initResumeProject = (): void => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        initResumeProject();
-    }, timeDelayToInitProject)
+    initResumeProject();
 })
