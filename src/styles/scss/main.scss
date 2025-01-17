@@ -1345,26 +1345,26 @@ body {
         }
 
         &--typescript {
-            width: 85%;
+            width: 90%;
 
             &:after {
-                content: "85%";
+                content: "90%";
             }
         }
 
         &--vitest {
-            width: 50%;
+            width: 75%;
 
             &:after {
-                content: "50%";
+                content: "75%";
             }
         }
 
         &--bundler {
-            width: 65%;
+            width: 80%;
 
             &:after {
-                content: "65%";
+                content: "80%";
             }
         }
 
